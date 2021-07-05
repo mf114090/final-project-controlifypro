@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const ListadoActividades = ()=>{
 
     return(
@@ -52,82 +54,52 @@ const ListadoActividades = ()=>{
 
                     </form>
                 </div>
-            </div>      
+            </div>    
+
+            <div className="row mt-4">
+                <div className="col-md-12 d-flex justify-content-end">
+                    <Link type="submit" className="btn btn-success" to="/listado-actividades/registro-edicion-actividad">Agregar Actividad</Link>
+                </div>
+            </div>
 
             <div className="row mt-4">
                 <div className="col-4 fs-5 bg-primary text-light">Proyecto XXXXXX</div>
             </div>
-            <div className="row border boder-primary d-flex justify-content align-items-center">
-                <div className="col-md-1">
-                    <h5 className="code">Código</h5>
-                </div>
-                <div className="col-md-2">
-                    <h5 className="code">Nombre</h5>
-                </div>
-                <div className="col-md-2">
-                    <h5 className="code">Descripción</h5>
-                </div>
-                <div className="col-md-1">
-                    <h5 className="code">Fecha Inicio</h5>
-                </div>
-                <div className="col-md-1">
-                    <h5 className="code">Fecha Fin</h5>
-                </div>
-                <div className="col-md-1">
-                    <h5 className="code">% Uso</h5>
-                </div>
-                <div className="col-md-2">
-                    <h5 className="code">HH Presupuesto</h5>
-                </div>
-                <div className="col-md-1">
-                    <h5 className="code">Estado</h5>
-                </div>
-                <div className="col-md-1">
-                    <h5 className="code">Acciones</h5>
-                </div>
-            </div>
 
+            <table className="table">
+            <thead>
+                <tr>
+                <th scope="col">Código</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Descripción</th>
+                <th scope="col">Fecha inicio</th>
+                <th scope="col">Fecha fin</th>
+                <th scope="col">% Uso</th>
+                <th scope="col">HH presupuesto</th>
+                <th scope="col">Estado</th>
+                <th scope="col">Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <th scope="row">X</th>
+                <td>XXX</td>
+                <td>XXX</td>
+                <td>XXX</td>
+                <td>XXX</td>
+                <td>XXX</td>
+                <td>XXX</td>
+                <td>XXX</td>
+                <td>
+                    <button className="edit-icon border-white bg-transparent text-primary"> <i class="fas fa-database"></i> </button>
+                    <button className="edit-icon border-white bg-transparent text-success"><i className="far fa-edit "></i> </button>
+                    <button className="trash-icon border-white bg-transparent text-danger"><i className="far fa-trash-alt "></i> </button>
+                </td>
+                </tr>                
+            </tbody>
+            </table>
 
-            <div className="row border boder-primary d-flex justify-content align-items-center">
-                <div className="col-md-1" id="codelist">
-                 <div className="p">XXX</div>
-                </div>
-                <div className="col-md-2" id="namelist">
-                <div className="p">XXX</div>
-                </div>
-                <div className="col-md-2" id="descriptionlist">
-                <div className="p">XXX</div>
-                </div>
-                <div className="col-md-1" id="initialdate">
-                <div className="p">XXX</div>
-                </div>
-                <div className="col-md-1" id="finaldate">
-                <div className="p">XXX</div>
-                </div>
-                <div className="col-md-1" id="use">
-                <div className="p">XXX</div>
-                </div>
-                <div className="col-md-2" id="hh-budget">
-                <div className="p">XXX</div>
-                </div>
-                <div className="col-md-1" id="state">
-                <div className="p">XXX</div>
-                </div>
-                <div className="col-md-1" id="actions">
-                <div className="row">
-                    <div className="col-md-4 d-flex">
-                        <button className="edit-icon border-white bg-transparent text-primary"> <i class="fas fa-database"></i> </button>
-                        <button className="edit-icon border-white bg-transparent text-success"><i className="far fa-edit "></i> </button>
-                        <button className="trash-icon border-white bg-transparent text-danger"><i className="far fa-trash-alt "></i> </button>
-                        
-                    </div>
-                </div>
-                </div>
-            </div>
-
-
-
-        </div>
+    </div>
         
     )
 }

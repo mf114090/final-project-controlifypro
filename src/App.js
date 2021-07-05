@@ -1,6 +1,8 @@
 import {BrowserRouter, Route , Switch} from 'react-router-dom'
 import Home from './views/home'
 import ListadoActividades from './views/listado-actividades'
+import RegistroEdicionActividad from './views/registro-edicion-actividad'
+
 import Error404 from './views/error404'
 
 const App= ()=>{
@@ -12,6 +14,9 @@ const App= ()=>{
                 </Route>
                 <Route exact path="/listado-actividades">
                     <ListadoActividades />
+                </Route>
+                <Route exact path="/listado-actividades/registro-edicion-actividad">
+                    <RegistroEdicionActividad />
                 </Route>
                 <Route>
                     <Error404 />
