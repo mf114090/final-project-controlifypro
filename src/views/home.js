@@ -93,13 +93,14 @@ const Home = () => {
                     </div>
                 </div>
             
-            <div className="container-fluid">
+            <div className="container mb-4">
                 <div class="card text-center">
                     <h1 className>Quienes Somos?</h1>
                         <div className="card-body">
-                            <h5 className="card-title">Special title treatment</h5>
-                            <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
                             
+                            <p className="card text-justify">Controlify es una App que agrupa recursos para  personas y empresas, quienes como actores de la Industria  y dentro del marco de una visión compartida paras el logro de su misión, contribuyen con su acción e inversión en la relacion Horas-Colaborador con la intencion de aumentar su productividad, lograr el rendimiento efectivo de todos sus equipos de trabajo y gestionar con exito las horas de trabajo  de los  colaboradores en cada proyecto .</p>
+                            <h5 className="card-title">Historia</h5>
+                            <p className= "card text-justify"> Nuestra App, fue fundada por 4 emprendedores el 21 de mayo de 2021, liderado por Ernesto. Inicialmente la denominaron "la App para organizar el trabajo".   Con el transcurrir del tiempo y durante el desarrollo de la app,  pasó a denominarse ControliFypro, hasta hoy día.</p>
                         </div>
                     </div>
                 </div>
