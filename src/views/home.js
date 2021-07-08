@@ -2,8 +2,8 @@ import React from "react";
 
 
 import Contact from '../components/contact'
-import imagen1 from '../img/imagen1.jpg'
-import imagen2 from '../img/imagen2.jpg'
+import imagen1 from '../img/1-500x400.jpg'
+import imagen2 from '../img/imagen2-300x200.jpg'
 import imagen3 from '../img/imagen3.jpg'
 import imagen4 from '../img/imagen4.jpg'
 import imagen5 from '../img/imagen5.jpg'
@@ -16,14 +16,14 @@ const Home = () => {
         <div className="body-home">
             <div className="container">
                 <h1 className="text-center">Controlify Pro</h1>
-                <div className="card mb-3 max-width: 200px;">
+                <div className="card mb-4-center max-width: 500px;">
                     <div className="row g-0">
                         <div className="col-md-6">
                             <div className="card-body">
                                 
-                                <h5 className="card-text">Aumenta la productividad de tu empresa.</h5>
-                                <h5 className="card-text">Gestiona las horas de tus proyectos.</h5>
-                                <h5 className="card-text">Aumenta el rendimiento de tu equipo.</h5>
+                                <h3 className="card-text">Aumenta la productividad de tu empresa.</h3>
+                                <h3 className="card-text">Gestiona las horas de tus proyectos.</h3>
+                                <h3 className="card-text">Aumenta el rendimiento de tu equipo.</h3>
                             </div>
                         </div>
                         <div className="col-md-6 ">
@@ -70,10 +70,10 @@ const Home = () => {
                             <div className="card h-100">
                                 <img src={imagen4} className="card-img-top img-circle" alt="..."/>
                                 <div className="card-body">
-                                    <h5 classname="card-title">Card title</h5>
+                                    <h5 className="card-title">Card title</h5>
                                     <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                                 </div>
-                                <div classname="card-footer">
+                                <div className="card-footer">
                                     <small className="text-muted">Last updated 3 mins ago</small>
                                 </div>
                             </div>
@@ -82,10 +82,10 @@ const Home = () => {
                             <div className="card h-100">
                                 <img src={imagen5} className="card-img-top" alt="..."/>
                                 <div className="card-body">
-                                    <h5 classname="card-title">Card title</h5>
+                                    <h5 className="card-title">Card title</h5>
                                     <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                                 </div>
-                                <div classname="card-footer">
+                                <div className="card-footer">
                                     <small className="text-muted">Last updated 3 mins ago</small>
                                 </div>
                             </div>
